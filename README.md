@@ -14,10 +14,10 @@ KAMP 정밀가공 품질보증 AI 데이터셋을 활용해 CNC 정밀가공 공
 
 ## Contents
 
-- `precision_machining_quality_assurance.ipynb`  
+- `공정데이터_CNC정밀가공_품질보증.ipynb`  
   정밀가공 품질보증 데이터셋 분석 노트북입니다.
 
-- `reports/HKNU_process_data_analysis_LHJ.pdf`  
+- `HKNU_공정데이터분석_LHJ.pdf`  
   공정 데이터 분석 및 설계 발표자료입니다.
 
 ## Analysis Workflow
