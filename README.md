@@ -1,0 +1,40 @@
+# Precision Machining Quality Assurance
+
+KAMP 정밀가공 품질보증 AI 데이터셋을 활용해 CNC 정밀가공 공정의 양품/불량을 분류하는 DNN 모델을 재현하고 정리한 개인 학습 프로젝트입니다.
+
+## Project Goal
+
+정밀가공 공정에서는 공구 마모와 부하 증가가 가공 품질에 영향을 줄 수 있습니다. 이 프로젝트는 공정 중 수집된 서보 전류, 서보 부하, 스핀들 부하 등의 데이터를 이용해 제품의 합격/불량 여부를 분류하는 것을 목표로 합니다.
+
+## Data Source
+
+중소벤처기업부, Korea AI Manufacturing Platform(KAMP), 정밀가공 품질보증 AI 데이터셋, 스마트제조혁신추진단(㈜인터엑스), 2022.12.23., www.kamp-ai.kr
+
+원본 CSV 데이터는 이 저장소에 포함하지 않습니다.
+
+## Contents
+
+- `precision_machining_quality_assurance.ipynb`  
+  정밀가공 품질보증 데이터셋 분석 노트북입니다.
+
+- `reports/HKNU_process_data_analysis_LHJ.pdf`  
+  공정 데이터 분석 및 설계 발표자료입니다.
+
+## Analysis Workflow
+
+1. 데이터 로드 및 기본 구조 확인
+2. 양품/불량 클래스 분포 확인
+3. 변수별 분포 및 양품/불량 그룹별 분포 시각화
+4. 비수치형 변수 제거 및 이상치 처리
+5. 학습 데이터 기준 T-test 변수 선택
+6. 학습/평가 데이터 분할
+7. SMOTE 기반 클래스 불균형 보정
+8. 정규화 및 스케일링
+9. DNN 모델 학습
+10. F1-score, confusion matrix, ROC curve 기반 모델 평가
+
+## Notes
+
+이 프로젝트는 원본 KAMP 분석실습 가이드북을 참고한 개인 학습용 프로젝트입니다. 목적은 제조 공정 데이터의 전처리, 클래스 불균형 처리, DNN 기반 이진 분류 모델링 흐름을 이해하고 정리하는 것입니다.
+
+향후에는 DNN 외에도 Random Forest, Gradient Boosting, SVM 등 전통적인 머신러닝 모델과 비교하고, 변수 중요도 및 공정 해석 관점의 설명 가능성을 추가할 수 있습니다.
